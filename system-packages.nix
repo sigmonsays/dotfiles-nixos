@@ -5,7 +5,7 @@ pkgs: with pkgs; [
   vim
   git
 
-  make
+  gnumake
 
 
   ( import ./pkgs/example.nix )
