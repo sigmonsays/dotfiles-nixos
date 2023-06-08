@@ -16,7 +16,7 @@ pkgs: with pkgs; [
   tmux
 
   # For oflist. Might be time to rewrite this thing
-  python2
+  #python2
 
   ( import ./pkgs/example.nix )
   ( import ./pkgs/dotbot.nix )
