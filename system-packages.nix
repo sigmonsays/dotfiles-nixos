@@ -7,6 +7,9 @@ pkgs: with pkgs; [
   file
   gnumake
 
+  ripgrep
+  emacsNativeComp
+
   ( import ./pkgs/example.nix )
   ( import ./pkgs/dotbot.nix )
 
