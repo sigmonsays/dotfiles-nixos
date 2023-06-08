@@ -12,6 +12,7 @@ pkgs: with pkgs; [
 
   fzf
 
+  tmux
 
   ( import ./pkgs/example.nix )
   ( import ./pkgs/dotbot.nix )
