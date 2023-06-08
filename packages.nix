@@ -10,6 +10,9 @@ pkgs: with pkgs; [
   ripgrep
   emacsNativeComp
 
+  fzf
+
+
   ( import ./pkgs/example.nix )
   ( import ./pkgs/dotbot.nix )
 

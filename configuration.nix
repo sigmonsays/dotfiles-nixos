@@ -44,7 +44,7 @@
     }
   ];
 
-  environment.systemPackages = import ./system-packages.nix pkgs;
+  environment.systemPackages = import ./packages.nix pkgs;
 
   services.openssh.enable = true;
 
