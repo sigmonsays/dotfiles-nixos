@@ -1,8 +1,5 @@
 with import <nixpkgs> {};
 
-let
-   do
-in
 
 stdenv.mkDerivation rec {
 
@@ -11,15 +8,16 @@ stdenv.mkDerivation rec {
 
    src = fetchurl {
     url = "https://github.com/sigmonsays/dotbot/releases/download/v${version}/dotbot-v${version}-linux-amd64.tar.gz";
-    sha256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855";
+    sha256 = "sha256-GNoYN9vXAX/CSVMVW7akfzrwFLYAxNTZLub3SBXirF0=";
 
   };
 
-   #buildInputs = [ ];
+   buildInputs = [ src ];
 
    installPhase = ''
+       tar vzxf dotbot-v${version}-linux-amd64.tar.gz
        mkdir -p "$out/bin"
-       cp ${src}/bin/dotbot $out/bin/dotbot
+       cp -v ./dotbot $out/bin/dotbot
        chmod +x $out/bin/dotbot
    '';
 
