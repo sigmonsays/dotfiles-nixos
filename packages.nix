@@ -11,6 +11,7 @@ pkgs: with pkgs; [
   emacsNativeComp
 
   fzf
+  jq
 
   tmux
 
