@@ -1,31 +1,26 @@
+
 with import <nixpkgs> {};
 
+buildGoModule rec {
+  pname = "dotbot";
+  version = "0.0.15";
 
-stdenv.mkDerivation rec {
-
-   pname = "example";
-   version = "0.0.15";
-
-   src = fetchurl {
-    url = "https://github.com/sigmonsays/dotbot/releases/download/v${version}/dotbot-v${version}-linux-amd64.tar.gz";
-    sha256 = "sha256-GNoYN9vXAX/CSVMVW7akfzrwFLYAxNTZLub3SBXirF0=";
-
+  src = fetchFromGitHub {
+    owner = "sigmonsays";
+    repo = "dotbot";
+    rev = "v${version}";
+    hash = "sha256-66zURNXvZllnGo803BRGpcxjny4ESmnJNiTkeHDRAmI";
   };
 
-   buildInputs = [ src ];
+  vendorHash = "sha256-KQr0DtyH3xzlFwsDl3MGLRRLQC4+EtdTOG7IhmNCzV4=";
 
-   installPhase = ''
-       tar vzxf dotbot-v${version}-linux-amd64.tar.gz
-       mkdir -p "$out/bin"
-       cp -v ./dotbot $out/bin/dotbot
-       chmod +x $out/bin/dotbot
-   '';
-
-   meta = with lib; {
+  meta = with lib; {
+    description = "manage dotfiles";
     homepage = "https://github.com/sigmonsays/dotbot";
-    description = "manage dot files";
-    license = licenses.gpl3;
+    license = licenses.mit;
     maintainers = [ "sigmonsays" ];
-    platforms = [ "x86_64-linux" ];
   };
 }
+
+
+

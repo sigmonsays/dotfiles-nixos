@@ -8,6 +8,6 @@ pkgs: with pkgs; [
   gnumake
 
   ( import ./pkgs/example.nix )
-  #( import ./pkgs/dotbot.nix )
+  ( import ./pkgs/dotbot.nix )
 
 ]
