@@ -7,8 +7,13 @@ pkgs: with pkgs; [
   file
   gnumake
 
+  # Emacs packages
   ripgrep
   emacsNativeComp
+
+  # Go development
+  gopls
+  godef
 
   fzf
   jq
