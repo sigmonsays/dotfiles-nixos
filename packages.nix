@@ -13,6 +13,7 @@ pkgs: with pkgs; [
 
   # Go development
   gopls
+  godef
   gotools
 
   fzf
