@@ -9,7 +9,7 @@ rebuild:
 	sudo nixos-rebuild switch
 
 install:
-	./install.sh
+	sudo ./install.sh
 
 pull:
 	git pull
