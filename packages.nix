@@ -9,6 +9,7 @@ pkgs: with pkgs; [
 
   # Emacs packages
   ripgrep
+  sift
   emacsNativeComp
 
   # Go development
