@@ -5,3 +5,4 @@ clean:
 symlinks:
    /etc/nixos/configuration.nix: configuration.nix
    /etc/nixos/packages.nix: packages.nix
+   /etc/nixos/pkgs: pkgs

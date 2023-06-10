@@ -5,7 +5,7 @@ all:
 	# pull          git pull
 
 rebuild:
-	nixos-rebuild switch
+	( cd /etc/nixos && sudo nixos-rebuild switch )
 
 pull:
 	git pull
