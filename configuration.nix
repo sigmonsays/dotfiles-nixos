@@ -8,7 +8,7 @@
     ];
 
 
-  nix.settings.experimental-features = [ "nix-command" ];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/vda";
@@ -17,16 +17,16 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
-  users.users.sandbox = {
-     isNormalUser = true;
-     extraGroups = [ "wheel" ];
-     packages = with pkgs; [
-       tree
-     ];
-  };
+  # users.users.sandbox = {
+  #    isNormalUser = true;
+  #    extraGroups = [ "wheel" ];
+  #    packages = with pkgs; [
+  #      tree
+  #    ];
+  # };
   users.users.sig = {
      isNormalUser = true;
-     extraGroups = [ "wheel" ];
+     extraGroups = [ "wheel" "docker" ];
      packages = with pkgs; [
        tree
      ];
@@ -45,6 +45,8 @@
   ];
 
   environment.systemPackages = import ./packages.nix pkgs;
+
+  virtualisation.docker.enable = true;
 
   services.openssh.enable = true;
 
