@@ -2,4 +2,3 @@
 {
 	networking.hostName = "nixos2";
 }
-
