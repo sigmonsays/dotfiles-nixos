@@ -3,9 +3,13 @@ all:
 	# gc            garbage collect
 	# rebuild       rebuild system
 	# pull          git pull
+	# install       copy files to /etc/nixos
 
 rebuild:
-	( cd /etc/nixos && sudo nixos-rebuild switch )
+	sudo nixos-rebuild switch
+
+install:
+	./install.sh
 
 pull:
 	git pull
