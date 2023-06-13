@@ -1,8 +1,0 @@
-clean:
-  - "/etc/nixos"
-  - "/etc/nix"
-symlinks:
-   /etc/nixos/configuration.nix: configuration.nix
-   /etc/nixos/packages.nix: packages.nix
-   /etc/nixos/pkgs: pkgs
-   /etc/nixos/modules: modules
