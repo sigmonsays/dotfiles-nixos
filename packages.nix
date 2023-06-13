@@ -1,12 +1,9 @@
 pkgs: with pkgs; [
 
-
   # Go development
   gopls
   godef
   gotools
-
-
 
   # For oflist. Might be time to rewrite this thing
   #python2
