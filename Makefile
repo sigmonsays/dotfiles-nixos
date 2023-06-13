@@ -1,10 +1,15 @@
 ##
 all:
-	# deploy        install and rebuild
-	# rebuild       rebuild system
+	# deploy        install and rebuild nixos
+	# rebuild       rebuild nixos system
 	# pull          git pull
-	# install       copy files to /etc/nixos
-	# gc            garbage collect
+	# install       copy nixos files to /etc/nixos
+	# gc            nixos garbage collect
+	# home          deploy home-manager
+
+.PHONY: home
+home:
+	$(MAKE) -C home
 
 deploy: N=default
 deploy: install rebuild
