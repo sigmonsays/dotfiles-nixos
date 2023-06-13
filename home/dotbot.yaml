@@ -1,0 +1,5 @@
+# dotbot config for home manager
+symlinks:
+   # Nix
+   ~/.config/home-manager: home-manager
+# EOF
