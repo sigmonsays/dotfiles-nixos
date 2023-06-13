@@ -5,17 +5,13 @@ let
 in {
   options.modules.emacs = {
     enable = mkEnableOption "emacs editor";
-    # greeter = mkOption {
-    #   type = types.str;
-    #   default = "world";
-    # };
   };
 
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
+      emacsNativeComp
       ripgrep
       sift
-      emacsNativeComp
     ];
 
   };
