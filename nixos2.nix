@@ -6,18 +6,19 @@
       ./hardware-configuration.nix
       ./modules/emacs
       ./modules/myuser
+      ./modules/common
     ];
 
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/vda";
 	networking.hostName = "nixos2";
 
-
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   #nixpkgs.config.allowUnfree = true;
-  modules.emacs.enable = true;
+  modules.common.enable = true;
   modules.myuser.enable = true;
+  modules.emacs.enable = true;
 
   environment.systemPackages = import ./packages.nix pkgs;
 
@@ -25,8 +26,8 @@
   i18n.defaultLocale = "en_US.UTF-8";
 
   virtualisation.docker.enable = true;
-  services.openssh.enable = true;
   networking.firewall.enable = false;
+  services.openssh.enable = true;
 
   system.stateVersion = "23.11";
 }
