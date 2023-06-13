@@ -12,7 +12,6 @@ in {
     environment.systemPackages = with pkgs; [
       file
       fzf
-      fzf
       git
       gnumake
       jq
