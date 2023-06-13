@@ -1,3 +1,4 @@
+# device specific
 { config, pkgs, ... }:
 {
 	networking.hostName = "nixos2";

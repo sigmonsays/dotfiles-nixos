@@ -1,25 +1,29 @@
+# device specific configuration - nixos2.lan
 { config, pkgs, ... }:
 {
   imports =
     [
-      ./device.nix
-      ./hardware-configuration.nix
+      ./hardware-configuration-nixos2.nix
       ./modules/emacs
       ./modules/myuser
     ];
 
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/vda";
+	networking.hostName = "nixos2";
+
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   #nixpkgs.config.allowUnfree = true;
   modules.emacs.enable = true;
   modules.myuser.enable = true;
 
   environment.systemPackages = import ./packages.nix pkgs;
 
-
   time.timeZone = "America/Los_Angeles";
-
   i18n.defaultLocale = "en_US.UTF-8";
+
   virtualisation.docker.enable = true;
   services.openssh.enable = true;
   networking.firewall.enable = false;
