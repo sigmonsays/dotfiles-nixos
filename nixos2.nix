@@ -7,6 +7,7 @@
       ./modules/emacs
       ./modules/myuser
       ./modules/common
+      ./modules/nfsdata
     ];
 
   boot.loader.grub.enable = true;
@@ -19,6 +20,7 @@
   modules.common.enable = true;
   modules.myuser.enable = true;
   modules.emacs.enable = true;
+  modules.nfsdata.enable = true;
 
   environment.systemPackages = import ./packages.nix pkgs;
 
