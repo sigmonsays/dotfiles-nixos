@@ -6,7 +6,6 @@ pkgs: with pkgs; [
   file
   gnumake
 
-
   # Go development
   gopls
   godef

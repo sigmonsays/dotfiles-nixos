@@ -20,13 +20,6 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
-  # users.users.sandbox = {
-  #    isNormalUser = true;
-  #    extraGroups = [ "wheel" ];
-  #    packages = with pkgs; [
-  #      tree
-  #    ];
-  # };
   users.users.sig = {
      isNormalUser = true;
      extraGroups = [ "wheel" "docker" ];
