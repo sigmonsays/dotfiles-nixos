@@ -1,4 +1,3 @@
-
 pkgs: with pkgs; [
 
   tree
@@ -7,10 +6,6 @@ pkgs: with pkgs; [
   file
   gnumake
 
-  # Emacs packages
-  ripgrep
-  sift
-  emacsNativeComp
 
   # Go development
   gopls

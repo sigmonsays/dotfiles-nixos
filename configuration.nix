@@ -5,8 +5,11 @@
     [
       ./device.nix
       ./hardware-configuration.nix
+      ./modules/emacs
     ];
 
+  #nixpkgs.config.allowUnfree = true;
+  modules.emacs.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
