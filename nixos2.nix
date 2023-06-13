@@ -3,7 +3,7 @@
 {
   imports =
     [
-      ./hardware-configuration-nixos2.nix
+      ./hardware-configuration.nix
       ./modules/emacs
       ./modules/myuser
     ];

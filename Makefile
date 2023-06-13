@@ -6,13 +6,15 @@ all:
 	# install       copy files to /etc/nixos
 	# gc            garbage collect
 
+deploy: N=default
 deploy: install rebuild
 
 rebuild:
 	sudo nixos-rebuild switch
 
+install: N=default
 install:
-	sudo ./install.sh
+	sudo ./install.sh $(N)
 
 pull:
 	git pull
