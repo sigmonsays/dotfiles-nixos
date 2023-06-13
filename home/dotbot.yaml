@@ -1,5 +1,8 @@
-# dotbot config for home manager
+# dotbot config for nix home manager
+mkdirs:
+  - ~/.config/home-manager
 symlinks:
-   # Nix
-   ~/.config/home-manager: home-manager
+   ~/.config/home-manager/home.nix: home.nix
+   ~/.config/home-manager/dotfiles.nix: dotfiles.nix
+   ~/.config/home-manager/packages.nix: packages.nix
 # EOF
