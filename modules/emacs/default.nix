@@ -11,6 +11,15 @@ in {
     environment.systemPackages = with pkgs; [
       emacsNativeComp
       ripgrep
+
+      binutils
+      git
+
+      fd
+      imagemagick
+      zstd
+      sqlite
+      age
     ];
 
   };
