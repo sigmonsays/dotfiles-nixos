@@ -3,13 +3,13 @@ with import <nixpkgs> {};
 
 buildGoModule rec {
   pname = "git-caddy";
-  version = "0.0.16";
+  version = "0.0.17";
 
   src = fetchFromGitHub {
     owner = "sigmonsays";
     repo = "git-caddy";
     rev = "v${version}";
-    hash = "sha256-vchX5zYpPbkhpTk6Eb4/ESbOn66U4j8IAHQW4QnvKCU=";
+    hash = "sha256-KPe4RReQt5kCQd06exNCp7nrDJuBE845jFh4NWNDsBc=";
   };
 
   vendorHash = "sha256-88Iy2PcQ8eBxDhepGtFTdxawCN/kiRYSgqBLFMvC9J0=";
