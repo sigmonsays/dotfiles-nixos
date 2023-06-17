@@ -11,5 +11,6 @@ pkgs: with pkgs; [
   ( import ./pkgs/example.nix )
   ( import ./pkgs/dotbot.nix )
   ( import ./pkgs/git-caddy.nix )
+  ( import ./pkgs/findfile.nix )
 
 ]
