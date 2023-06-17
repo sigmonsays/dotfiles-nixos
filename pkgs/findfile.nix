@@ -3,7 +3,7 @@ with import <nixpkgs> {};
 
 buildGoModule rec {
   pname = "findfile";
-  version = "0.0.8";
+  version = "0.0.9";
 
   src = fetchFromGitHub {
     owner = "sigmonsays";
