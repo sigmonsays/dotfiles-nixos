@@ -12,7 +12,7 @@ buildGoModule rec {
     hash = "sha256-nuyaH268yvyIYaM/DNgWkQCszP+/Xu2nPszGw5AC2Hg=";
   };
 
-  vendorHash = "sha256-Zdqh8Y6zpm2aRMDtL6cNFqsHk97BOHLgVy/d2hFbguo";
+  vendorHash = "sha256-YCRbm3rX8GcVtnnwme4d1Hk8S68mUuLj2v9uLs1kiPg=";
 
   meta = with lib; {
     description = "find file tool";
