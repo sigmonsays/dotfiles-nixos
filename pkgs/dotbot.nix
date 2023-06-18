@@ -6,6 +6,7 @@ buildGoModule rec {
   version = "0.0.16";
 
   src = fetchFromGitHub {
+    name = "${pname}-${version}";
     owner = "sigmonsays";
     repo = "dotbot";
     rev = "v${version}";
