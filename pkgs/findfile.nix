@@ -9,7 +9,7 @@ buildGoModule rec {
     owner = "sigmonsays";
     repo = "findfile";
     rev = "v${version}";
-    hash = "sha256-nuyaH268yvyIYaM/DNgWkQCszP+/Xu2nPszGw5AC2Hg=";
+    hash = "sha256-wTZx70cLxfBH2Lz+1zNepfgfRnwKLYtA3AQb6/lSwAo=";
   };
 
   vendorHash = "sha256-YCRbm3rX8GcVtnnwme4d1Hk8S68mUuLj2v9uLs1kiPg=";
