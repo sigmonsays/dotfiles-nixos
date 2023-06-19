@@ -22,6 +22,7 @@
   modules.myuser.enable = true;
   modules.emacs.enable = true;
   modules.nfsdata.enable = true;
+  modules.syncthing.enable = true;
 
   environment.systemPackages = import ./packages.nix pkgs;
 

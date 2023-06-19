@@ -10,6 +10,7 @@ in {
   config = mkIf cfg.enable {
     services = {
       syncthing = {
+          guiAddress = "0.0.0.0:8384";
           enable = true;
           user = "sig";
           dataDir = "/home/sig";    # Default folder for new synced folders
