@@ -8,6 +8,7 @@
       ./modules/myuser
       ./modules/common
       ./modules/nfsdata
+      ./modules/syncthing
     ];
 
   boot.loader.grub.enable = true;
