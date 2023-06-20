@@ -24,6 +24,8 @@
   modules.nfsdata.enable = true;
   modules.syncthing.enable = true;
 
+  programs.autojump.enable = true;
+
   environment.systemPackages = import ./packages.nix pkgs;
 
   time.timeZone = "America/Los_Angeles";
