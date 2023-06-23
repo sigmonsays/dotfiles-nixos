@@ -1,0 +1,8 @@
+# dotbot config for nix home manager
+mkdirs:
+  - ~/.config/home-manager
+symlinks:
+   ~/.config/home-manager/home.nix: home.nix
+   ~/.config/home-manager/dotfiles.nix: dotfiles.nix
+   ~/.config/home-manager/packages.nix: packages.nix
+# EOF
