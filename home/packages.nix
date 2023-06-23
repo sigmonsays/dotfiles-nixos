@@ -5,6 +5,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
+    pkgs.findutils
     pkgs.htop
     pkgs.tree
     pkgs.sift
@@ -22,7 +23,7 @@
     pkgs.nixos-rebuild
 
     # virtualization
-    pkgs.podman
+    #pkgs.podman
     # pkgs.qemu
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
