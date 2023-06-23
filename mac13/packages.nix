@@ -30,6 +30,8 @@
     # nix tools
     pkgs.nixos-rebuild
 
+    ( import ../nixos/pkgs/dotbot.nix )
+
     # virtualization
     #pkgs.podman
     # pkgs.qemu
