@@ -8,7 +8,7 @@
     # Better userspace
     pkgs.findutils
     pkgs.coreutils
-    pkgs.bash
+    pkgs.bashInteractive
     pkgs.gnumake
 
     # tools
