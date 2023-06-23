@@ -26,6 +26,7 @@
     # Emacs
     pkgs.emacsNativeComp
     pkgs.ripgrep
+    pkgs.python3
 
     # My random stuff
     ( import ../nixos/pkgs/dotbot.nix )
