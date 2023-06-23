@@ -4,7 +4,14 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
+
+    # Better userspace
     pkgs.findutils
+    pkgs.coreutils
+    pkgs.bash
+    pkgs.gnumake
+
+    # tools
     pkgs.htop
     pkgs.tree
     pkgs.sift
@@ -13,8 +20,8 @@
     pkgs.jq
     pkgs.tmsu
     pkgs.neovim
-    pkgs.bash
     pkgs.gcc
+
 
     # Emacs
     pkgs.emacsNativeComp
