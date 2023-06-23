@@ -10,7 +10,7 @@ mkShell {
     wget
     curl
 
-    ( ./pkgs/dotbot.nix )
+    ( import ./pkgs/dotbot.nix )
 
   ];
 }
