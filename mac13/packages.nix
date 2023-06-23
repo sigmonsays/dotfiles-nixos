@@ -16,6 +16,7 @@
     pkgs.tree
     pkgs.sift
     pkgs.fortune
+    pkgs.fzf
     pkgs.git
     pkgs.jq
     pkgs.tmsu
