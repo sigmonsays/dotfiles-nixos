@@ -27,10 +27,13 @@
     pkgs.emacsNativeComp
     pkgs.ripgrep
 
+    # My random stuff
+    ( import ../nixos/pkgs/dotbot.nix )
+    ( import ../nixos/pkgs/git-caddy.nix )
+
     # nix tools
     pkgs.nixos-rebuild
 
-    ( import ../nixos/pkgs/dotbot.nix )
 
     # virtualization
     #pkgs.podman
