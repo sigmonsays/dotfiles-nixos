@@ -1,13 +1,15 @@
-
 { config, pkgs, ... }:
 
 {
+  imports = [
+      ./modules/common
+  ];
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
     pkgs.findutils
     pkgs.htop
-    pkgs.tree
     pkgs.sift
     pkgs.fortune
     pkgs.git
