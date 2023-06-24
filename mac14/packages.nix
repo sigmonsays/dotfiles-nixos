@@ -14,11 +14,12 @@
     # tools
     pkgs.htop
     pkgs.tree
-    pkgs.sift
+    #pkgs.sift
     pkgs.fortune
     pkgs.fzf
     pkgs.git
     pkgs.jq
+    pkgs.gdu
     pkgs.tmsu
     pkgs.neovim
     pkgs.gcc
