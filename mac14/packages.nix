@@ -22,9 +22,9 @@
 
 
     # My random stuff
-    ( import ../nixos/pkgs/dotbot.nix )
-    ( import ../nixos/pkgs/git-caddy.nix )
-    ( import ../nixos/pkgs/findfile.nix )
+    ( import ../pkgs/dotbot.nix )
+    ( import ../pkgs/git-caddy.nix )
+    ( import ../pkgs/findfile.nix )
 
     # nix tools
     pkgs.nixos-rebuild

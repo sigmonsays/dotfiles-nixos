@@ -10,7 +10,7 @@ in {
   config = mkIf cfg.enable {
     home.packages = with pkgs; [
       imagemagick
-      ( import ../../nixos/pkgs/screenshot2.nix )
+      ( import ../../pkgs/screenshot2.nix )
     ];
 
   };
