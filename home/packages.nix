@@ -17,9 +17,6 @@
     pkgs.tmsu
     pkgs.neovim
 
-    # Emacs
-    pkgs.emacsNativeComp
-    pkgs.ripgrep
 
     # nix tools
     pkgs.nixos-rebuild

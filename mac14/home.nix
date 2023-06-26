@@ -9,9 +9,11 @@
     ./packages.nix
     ./dotfiles.nix
     ./modules/common
+    ./modules/emacs
   ];
 
   modules.common.enable = true;
+  modules.emacs.enable = true;
 
   home.sessionVariables = {
     # EDITOR = "emacs";

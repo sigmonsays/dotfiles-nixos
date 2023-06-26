@@ -24,11 +24,6 @@
     pkgs.gcc
 
 
-    # Emacs
-    pkgs.emacsNativeComp
-    pkgs.ripgrep
-    pkgs.python3
-
     # My random stuff
     ( import ../nixos/pkgs/dotbot.nix )
     ( import ../nixos/pkgs/git-caddy.nix )
