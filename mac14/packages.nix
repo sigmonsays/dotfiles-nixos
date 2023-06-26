@@ -25,7 +25,6 @@
     ( import ../nixos/pkgs/dotbot.nix )
     ( import ../nixos/pkgs/git-caddy.nix )
     ( import ../nixos/pkgs/findfile.nix )
-    ( import ../nixos/pkgs/screenshot2.nix )
 
     # nix tools
     pkgs.nixos-rebuild
