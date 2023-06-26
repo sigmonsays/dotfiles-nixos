@@ -11,5 +11,5 @@ fi
 cp -v $host.nix /etc/nixos/configuration.nix
 cp packages.nix /etc/nixos/
 mkdir -pv /etc/nixos/{pkgs,modules}
-rsync -ar --delete ./pkgs/ /etc/nixos/pkgs/
+rsync -ar --delete ../pkgs/ /etc/nixos/pkgs/
 rsync -ar --delete ./modules/ /etc/nixos/modules/
