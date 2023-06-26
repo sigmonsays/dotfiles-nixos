@@ -8,8 +8,8 @@ pkgs: with pkgs; [
   # For oflist. Might be time to rewrite this thing
   #python2
 
-  ( import ./pkgs/dotbot.nix )
-  ( import ./pkgs/git-caddy.nix )
-  ( import ./pkgs/findfile.nix )
+  ( import ../pkgs/dotbot.nix )
+  ( import ../pkgs/git-caddy.nix )
+  ( import ../pkgs/findfile.nix )
 
 ]
