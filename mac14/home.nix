@@ -8,7 +8,11 @@
   imports = [
     ./packages.nix
     ./dotfiles.nix
+    ./modules/common
   ];
+
+  modules.common.enable = true;
+
   home.sessionVariables = {
     # EDITOR = "emacs";
   };

@@ -13,7 +13,6 @@
 
     # tools
     pkgs.htop
-    pkgs.tree
     #pkgs.sift
     pkgs.fortune
     pkgs.fzf
