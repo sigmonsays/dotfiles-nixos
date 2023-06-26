@@ -1,0 +1,6 @@
+# dotbot config for nix home manager
+mkdirs:
+  - ~/.config
+symlinks:
+   ~/.config/home-manager: mac14
+# EOF

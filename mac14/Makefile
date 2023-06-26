@@ -1,3 +1,3 @@
 all:
-	dotbot link
+	#dotbot link
 	home-manager switch
