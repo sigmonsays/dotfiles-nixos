@@ -5,6 +5,7 @@ host="$1"
 
 if [ -z "$host" ] ; then
 	"Usage: $0 host"
+	exit 1
 fi
 
 
